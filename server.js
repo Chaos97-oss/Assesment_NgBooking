@@ -13,7 +13,7 @@ app.use(express.json());
 
 // Main App Routes
 app.use('/', bookingRoutes);
-app.use('/', uploadRoutes);    // Handle /upload-image
+app.use('/', uploadRoutes);
 
 // Serve static files for the uploads folder to make URLs accessible
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));

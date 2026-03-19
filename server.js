@@ -12,7 +12,7 @@ const app = express();
 app.use(express.json());
 
 // Main App Routes
-app.use('/', bookingRoutes);   // Handle /book-room and /bookings
+app.use('/', bookingRoutes);
 app.use('/', uploadRoutes);    // Handle /upload-image
 
 // Serve static files for the uploads folder to make URLs accessible
